@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dine-In Reservation - Ann Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dineIn.css">
+</head>
+<body>
+    <div class="reservation-container">
+        <h2>Dine-In Table Reservation</h2>
+        <p>Pumili ng gusto mong table at oras ng inyong pagdating.</p>
+        
+        <form class="reservation-form">
+            <div class="form-group">
+                <label for="name">Pangalan:</label>
+                <input type="text" id="name" placeholder="Ipasok ang pangalan" required>
+            </div>
+
+            <div class="form-group">
+                <label for="table-select">Pumili ng Table:</label>
+                <select id="table-select" required>
+                    <option value="" disabled selected>-- Pumili ng Table --</option>
+                    <option value="table1">Table 1 (Good for 2 Pax)</option>
+                    <option value="table2">Table 2 (Good for 4 Pax)</option>
+                    <option value="table3">Table 3 (Family Table - 6 to 8 Pax)</option>
+                    <option value="vip">VIP Room / Table</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="datetime">Petsa at Oras:</label>
+                <input type="datetime-local" id="datetime" required>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Bilang ng Tao (Guests):</label>
+                <input type="number" id="guests" min="1" max="20" placeholder="1" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Reserve Table</button>
+            <a href="index.html#service" class="back-link">← Bumalik sa Home Page</a>
+        </form>
+    </div>
+</body>
+</html>

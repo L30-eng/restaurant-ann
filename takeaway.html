@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takeaway & Delivery - Ann Restaurant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="takeaway.css">
+</head>
+<body>
+    <div class="delivery-container">
+        <h2>Takeaway & Delivery Details</h2>
+        <p>Ikalagay ang inyong impormasyon para sa paghahatid ng order.</p>
+        
+        <form class="delivery-form">
+            <div class="form-group">
+                <label for="fullname">Buong Pangalan:</label>
+                <input type="text" id="fullname" placeholder="Ipasok ang buong pangalan" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone / Mobile Number:</label>
+                <input type="tel" id="phone" placeholder="09123456789" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Lugar / Complete Delivery Address:</label>
+                <textarea id="address" rows="4" placeholder="House No., Street, Barangay, City" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">Landmark / Special Instructions:</label>
+                <input type="text" id="notes" placeholder="Malapit sa barangay hall, kulay pula ang gate, etc.">
+            </div>
+
+            <button type="submit" class="submit-btn">Proceed to Order</button>
+            <a href="website.html#service" class="back-link">← Bumalik sa Home Page</a>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url('images/blury.jpeg') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.event-container {
+    background: rgba(0, 0, 0, 0.85);
+    border: 2px solid orange;
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+.icon-box {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.event-container h2 {
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.status-msg {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sub-msg {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+.contact-btn {
+    display: block;
+    padding: 12px;
+    background: orange;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.contact-btn:hover {
+    background: darkorange;
+}
+
+.back-link {
+    display: block;
+    color: orange;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}

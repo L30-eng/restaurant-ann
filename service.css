@@ -1,0 +1,68 @@
+.section-service_card{
+   
+    margin-top: 65px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    
+  
+}
+.section-service{
+   
+    background: wheat;
+    padding-block: 120px;
+    
+
+}
+
+.service-icon{
+    
+    background: rgba(13, 11, 11, 0.913);
+    width: fit-content;
+    color: white;
+    border-radius: 99px;
+    padding: 5px;
+
+
+}
+.service-icon svg {
+    
+    width: 50px;
+    height: 50px;
+    color: orange;
+}
+.section-title{
+    font-family: 'Praise', cursive;
+    border-top: 4px solid orange;
+    color: orange;
+    font-size: 50px;
+}
+.section-title span{
+    font-family: 'Praise', cursive;
+    color: brown
+}
+.section-cards{
+    padding: 24px
+}
+.section-cards:hover{
+    background: rgba(132, 81, 36, 0.904);
+    transition: 0.30s ease;
+    color: white;
+    scale: 1.01;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.links {
+    text-decoration: none;
+    color: white;
+}
+.section-desc {
+    color: black;
+    font-size: 20px;
+}
+ 
+.section-cards .section-service_title {
+    display: flex;
+    color: black;
+    font-size: 30px;
+} 

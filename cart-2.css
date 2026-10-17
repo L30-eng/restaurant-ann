@@ -1,0 +1,221 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #fcf8f5;
+    color: #333;
+    min-height: 100vh;
+}
+
+
+.cart-header {
+    background: rgba(147, 72, 28, 0.95);
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.cart-header h1 {
+    grid-column: 2; 
+    font-size: 26px;
+    color: orange;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: white;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: orange;
+    color: white;
+    transform: translateX(-3px);
+}
+
+.cart-container {
+    display: flex;
+    justify-content: center; /* Ilalagay sa gitna horizontal */
+    align-items: center;     /* Ilalagay sa gitna vertical */
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.cart-summary {
+    width: 100%;
+    max-width: 450px; /* Sakto lang ang lapad para sa Order Summary */
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border: 1px solid #f0e6df;
+}
+
+
+
+
+
+
+.cart-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.cart-item-info h3 {
+    font-size: 18px;
+    color: #93481c;
+    margin-bottom: 4px;
+}
+
+.cart-item-info p {
+    font-size: 15px;
+    font-weight: 600;
+    color: #666;
+}
+
+
+.item-total {
+    font-size: 16px;
+    font-weight: 700;
+    color: orange;
+    min-width: 80px;
+    text-align: right;
+}
+
+.remove-btn {
+    background: #ffecec;
+    color: #d9534f;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s ease;
+}
+
+.remove-btn:hover {
+    background: #d9534f;
+    color: white;
+}
+
+.empty-cart {
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #f0e6df;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.empty-cart h2 {
+    color: #93481c;
+    margin-bottom: 15px;
+}
+
+.empty-cart a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background: orange;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.empty-cart a:hover {
+    background: #e07b00;
+    box-shadow: 0 4px 10px rgba(255, 165, 0, 0.4);
+}
+
+/* ==========================================
+   ORDER SUMMARY CARD DESIGN
+   ========================================== */
+.cart-summary {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0e6df;
+    height: fit-content;
+}
+
+.cart-summary h2 {
+    font-size: 20px;
+    color: #93481c;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #fcf8f5;
+    padding-bottom: 10px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 15px;
+    color: #555;
+}
+
+.summary-row.total {
+    font-size: 18px;
+    font-weight: 700;
+    color: #93481c;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 15px 0;
+}
+
+#checkout-btn {
+    width: 100%;
+    background: orange;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 165, 0, 0.3);
+}
+
+#checkout-btn:hover {
+    background: #e07b00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 165, 0, 0.4);
+}
+
+#cart-count {
+    background-color: #d9534f; /* Pulang badge background */
+    color: white;
+    padding: 2px 8px;
+    border-radius: 50%;
+    font-size: 18px;
+    margin-left: 5px;
+}

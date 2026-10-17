@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ann Restaurant</title>
+    <meta name="title">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" type="image/jpg" href="images/logo.png">
+
+     <link rel="stylesheet" href="body.css">
+     <link rel="stylesheet" href="nav-search-header.css">
+     <link rel="stylesheet" href="section-home.css">
+     <link rel="stylesheet" href="section-menu.css">
+     <link rel="stylesheet" href="Login.css">
+     <link rel="stylesheet" href="about.css">
+     <link rel="stylesheet" href="cart.css">
+     <link rel="stylesheet" href="service.css">
+     <link rel="stylesheet" href="contact.css">
+     <link rel="stylesheet" href="footer.css">
+
+    
+
+
+
+</head>
+<body> 
+    
+    <!--navgation-->
+    <header class="header">   
+        <h1>Ann Resto<span>urant</span></h1>
+        <nav class="navbar">
+            <ul class="Home">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                 <div class="search-container">
+                    <!--search icon-->
+                <button id="searchBtn" class="search-btn"><svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
+fill="currentColor" viewBox="0 0 24 24" >
+<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+<path d="M18 10c0-4.41-3.59-8-8-8s-8 3.59-8 8 3.59 8 8 8c1.85 0 3.54-.63 4.9-1.69l5.1 5.1L21.41 20l-5.1-5.1A8 8 0 0 0 18 10M4 10c0-3.31 2.69-6 6-6s6 2.69 6 6-2.69 6-6 6-6-2.69-6-6"></path>
+</svg></button>
+                 <input type="text" id="searchInput" class="search-input" placeholder="Search....">
+                 <div class="search-results" id="searchResults"></div>
+                </div>
+                <div class="nav-right">
+                <a href="cart.html" class="cart-btn"><span><svg  xmlns="http://www.w3.org/2000/svg" width="48" height="48"  
+fill="currentColor" viewBox="0 0 24 24" >
+<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+<path d="M21 6H7.05L5.94 2.68A1 1 0 0 0 4.99 2h-3v2h2.28l3.54 10.63A2 2 0 0 0 9.71 16h7.59a2 2 0 0 0 1.87-1.3l2.76-7.35c.11-.31.07-.65-.11-.92A1 1 0 0 0 21 6m-3.69 8H9.72l-2-6h11.84zM10 18a2 2 0 1 0 0 4 2 2 0 1 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 1 0 0-4"></path>
+</svg></span></a><span id="cart-count">0</span>
+</div>
+               <a href="#" class="login-btn" id="loginBtn">Sign In</a> 
+            </ul>
+              
+        </nav> 
+
+    </header>
+    
+    <!--sign In feature-->
+<div class="login-modal" id="loginModal">
+    <div class="login-box">
+        <button class="close-login" id="closeLogin">&times;</button>
+        
+        <!-- Form with added ID -->
+        <form id="signInForm">
+            <h2>Hi my Friend!</h2>
+            <p>Please Sign In your Account</p>
+            <div class="input-box"> 
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required> 
+                <button type="submit">Sign In</button>  
+            </div>
+            <div class="forgot-password">
+                <a href="#" id="forgotPassword">Forgot Password</a>
+            </div>
+        </form>
+        <div id="signInSuccess" style="display: none; text-align: center; color: white; padding: 20px;">
+            <h2 style="color: orange; margin-bottom: 10px;">Thank You!</h2>
+            <p>You have successfully signed in.</p>
+        </div>
+    </div>
+</div>
+
+    <!-- home section  -->
+    <section class="section" id="home">
+        <video autoplay loop muted playsinline class="bg-video">
+        <source src="bgvideo.mp4" type="video/mp4">
+    </video>
+        <div class="home-content">
+            <h1 class="section-home_title"> Welcome to <span id="span1"> Ann </span><span id="span2">Restaurant</span>, where the taste lives!</h1>
+            <div class="home-botton">
+                <button class="home-btn" ><a href="contact.html">Contact Us</a></button>
+                <button class="home-btn" ><a href="#menu">Explore</a></button>
+            </div>
+        </div>
+        
+            <img class="section-home_image" src="logo.png" alt="Logo" title="Logo">
+       
+
+    </section>
+
+    <!-- section menu -->
+     <section class="section-menu-main" id="menu">
+
+        <h1 class="section-title">Our <span>Menus</span></h1>
+        <p class="section-desc1" id="p1">Matikman ang sarap ng mga authentic at paboritong lutong-bahay na Pilipino! Mula sa aming malanamnam na Adobo hanggang sa malutong na Calamares, 
+            bawat putahe ay inihahanda gamit ang pinakasariwang sangkap at pagmamahal.</p>
+              
+     <div class="section-menu_all">
+        <!--MENU 1-->
+        <div class="section-menu_card">
+            <img  class="section-menus_card-image" src="adobo.png" alt="adobo recipe">
+
+            <h1 class="section-menu_title">Adobo</h1>
+            <div class="section-menu_rating">
+
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span class="spn">4.8</span>
+            
+            </div>
+            <div class="section-menu_card-footer">
+                <h2 class="section-menu__card-price"> 100php </h2>
+               
+                <a href="#cart" class="add-cart" data-price="100" data-name="Adobo"> Add to Cart</a>
+            </div>
+        </div> 
+        <!--MENU 2-->
+        <div class="section-menu_card">
+            <img  class="section-menus_card-image" src="karekare.png" alt="kare-kare recipe">
+
+            <h1 class="section-menu_title">Kare-Kare</h1>
+            <div class="section-menu_rating">
+
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span class="spn">4.8</span>
+            
+            </div>
+            <div class="section-menu_card-footer">
+                <h2 class="section-menu__card-price"> 120php </h2>
+               
+                <a href="#cart" class="add-cart" data-price="120" data-name="Kare-Kare">Add to Cart</a>
+            </div>
+        </div> 
+        <!--MENU 3-->
+        <div class="section-menu_card">
+            <img  class="section-menus_card-image" src="calamares.png" alt="calamares recipe">
+
+            <h1 class="section-menu_title">Calamares</h1>
+            <div class="section-menu_rating">
+
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span class="spn">4.8</span>
+            
+            </div>
+            <div class="section-menu_card-footer">
+                <h2 class="section-menu__card-price"> 200php </h2>
+               
+                <a href="#cart" class="add-cart" data-price="200" data-name="Calamares">Add to Cart</a>
+            </div>
+        </div> 
+        <!--MENU 4-->
+        <div class="section-menu_card">
+            <img  class="section-menus_card-image" src="palabok.png" alt="palabok recipe">
+
+            <h1 class="section-menu_title">Palabok</h1>
+            <div class="section-menu_rating">
+
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span class="spn">4.8</span>
+            
+            </div>
+            <div class="section-menu_card-footer">
+                <h2 class="section-menu__card-price"> 300php </h2>
+               
+                <a href="#cart" class="add-cart" data-price="300" data-name="Palabok">Add to Cart</a>
+            </div>
+        </div> 
+        <!--MENU 5-->
+        <div class="section-menu_card">
+            <img  class="section-menus_card-image" src="Pata.png" alt="pata recipe">
+
+            <h1 class="section-menu_title">Pata</h1>
+            <div class="section-menu_rating">
+
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span>⭐</span>
+                <span class="spn" >4.8</span>
+            
+            </div>
+            <div class="section-menu_card-footer">
+                <h2 class="section-menu__card-price"> 250php </h2>
+               
+                <a href="#cart" class="add-cart" data-price="250" data-name="Pata">Add to Cart</a>
+            </div>
+        </div> 
+    
+     </div>
+     </section> 
+
+     
+ <!--About-->
+     <section class="section-about" id="about">
+        <img src="chicken.png" class="section-about_img">
+        <div class="about-content">
+            <h1 class="section-title" id="h1">About<span id="span">  Us</span></h1>
+            <p class="section-desc">Sa Ann Restaurant, layunin naming maghain ng masasarap at de-kalidad na pagkain na nag-uugnay sa
+                pamilya at magkakaibigan. Sa loob ng mahigit 10 taon, 
+                patuloy naming inihahain ang mga tradisyunal na resipe
+                 na nagbibigay ng saya at ginhawa sa bawat subo.!</p>
+                <div class="section-stats">
+                    <div class="stat">
+                        <h2>10+</h2>
+                        <p>Years of Experience</p>
+                    </div>
+                    <div class="stat">
+                        <h2>500+</h2>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="stat">
+                        <h2>5+</h2>
+                        <p>Menu Items</p>
+                    </div>
+                </div>
+                <button class="primary-btn"><a href="#">Learn More</a></button>
+        </div>
+        <img src="inasal.png" alt="inasal" class="section-background_img">
+        <img src="desert.png" alt="desert" class="section-background_img1">
+     </section>
+
+     <!--Service-->
+     <section class="section-service" id="service">
+        <h1 class="section-title">Our <span>Services</span></h1>
+        <p class="section-desc">Nag-aalok kami ng iba't ibang serbisyo upang matugunan ang inyong pangangailangan sa 
+            pagkain — kumain man kayo sa aming kainan, mag-uwi ng paboritong lutuin, o magdaos ng espesyal na okasyon.!</p>
+              <div class="section-service_card">
+                <div class="section-cards">
+                    <div class="service-icon">
+                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
+fill="currentColor" viewBox="0 0 24 24" >
+<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+<path d="M7 19.66V21c0 .55.45 1 1 1h8c.55 0 1-.45 1-1v-1.34c3.1-1.78 5-5.05 5-8.66 0-.55-.45-1-1-1H3c-.55 0-1 .45-1 1 0 3.61 1.9 6.87 5 8.66M19.94 12a7.94 7.94 0 0 1-4.38 6.16c-.34.17-.56.52-.56.9V20H9v-.94c0-.38-.21-.73-.56-.9A7.93 7.93 0 0 1 4.06 12zM10 9V7.93c0-1.19-.46-2.31-1.28-3.16C8.26 4.3 8 3.67 8 3.01V1.99H6v1.02c0 1.19.46 2.31 1.28 3.16.46.47.72 1.1.72 1.76V9zm4 0V7.93c0-1.19-.46-2.31-1.28-3.16-.46-.47-.72-1.1-.72-1.76V1.99h-2v1.02c0 1.19.46 2.31 1.28 3.16.46.47.72 1.1.72 1.76V9zm4 0V7.93c0-1.19-.46-2.31-1.28-3.16-.46-.47-.72-1.1-.72-1.76V1.99h-2v1.02c0 1.19.46 2.31 1.28 3.16.46.47.72 1.1.72 1.76V9z"></path>
+</svg>
+                    </div>
+                   <a href="dineIn.html" class="links"><h2 class="section-service_title">Dine-In</h2></a>
+                    <p>Mag-enjoy sa maayos, malinis, at kumportableng kapaligiran.</p>
+                </div>
+
+                <div class="section-cards">
+                    <div class="service-icon">
+                       <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
+fill="currentColor" viewBox="0 0 24 24" >
+<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+<path d="M21.93 7.66c-.02-.05-.04-.11-.07-.16a1 1 0 0 0-.06-.08c-.03-.04-.06-.09-.1-.12-.03-.03-.06-.04-.09-.07-.04-.03-.07-.06-.11-.09h-.01l-9-5.01a.99.99 0 0 0-.97 0l-9.01 5H2.5c-.04.02-.07.06-.11.09a.6.6 0 0 0-.09.07c-.04.04-.07.08-.1.12-.02.03-.05.05-.06.08-.03.05-.05.1-.07.16-.01.03-.03.05-.03.08-.02.08-.04.17-.04.26v8c0 .36.2.7.51.87l9 5 .15.06c.03.01.06.03.09.03a1.1 1.1 0 0 0 .5 0c.03 0 .06-.02.09-.03.05-.02.1-.03.15-.06l9-5c.32-.18.51-.51.51-.87v-8c0-.09-.01-.18-.04-.26 0-.03-.02-.05-.03-.08ZM12 4.15l6.94 3.86-2.44 1.36-6.94-3.86zm-4.5 2.5 6.94 3.86L12 11.87 5.06 8.01zM4 9.71l7 3.89v5.71l-7-3.89zm16 5.71-7 3.89V13.6l2.5-1.39v3.21l2-1.11V11.1L20 9.71z"></path>
+</svg>
+                    </div>
+                    <a href="takeaway.html" class="links"><h2 class="section-service_title">Takeaway & Delivery</h2></a>
+                    <p>Mabilis at siguradong mainit na ihahatid ang inyong paboritong pagkain sa inyong tahanan o opisina.</p>
+                </div>
+                <div class="section-cards">
+                    <div class="service-icon">
+                        <svg  xmlns="http://www.w3.org/2000/svg" width="24" height="24"  
+fill="currentColor" viewBox="0 0 24 24" >
+<!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+<path d="M19 4h-2V2h-2v2H9V2H7v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2M5 20V8h14V6v14z"></path><path d="M12 13h5v5h-5z"></path>
+</svg>
+                    </div>
+                    <a href="event.html" class="links"><h2 class="section-service_title">Event & Catering</h2></a>
+                    <p>Gawing mas espesyal ang inyong mga kaarawan, kasal, at pagtitipon gamit ang aming catering packages.</p>
+                </div>
+              </div>
+        </section>
+   
+    <!---footer-->
+    <footer>
+        <h1 class="footer_title">Restaurant</h1>
+        <ul class="footer_menus">
+            <li class="footer_menus-menu"><a href="#home">Home</a></li>
+            <li class="footer_menus-menu"><a href="#menu">Menu</a></li>
+            <li class="footer_menus-menu"><a href="#about">About</a></li>
+            <li class="footer_menus-menu"><a href="#service">Service</a></li>
+            <li class="footer_menus-menu"><a href="contact.html">Contact</a></li>
+            
+        </ul>
+        <div class="footer_divider"></div>
+       <p class="footer_copyright">
+        &copy; 2026 Restaurant. All rigth reserved. Crafted By NhelPres
+       </p>
+    </footer>
+     
+     
+<!--audio-->
+<audio id="bgMusic" loop preload="auto">
+    <source src="images/bg-music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>   
+</body>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+
+
+<script>
+    var music = document.getElementById('bgMusic');
+    // Function para patugtugin ang music
+    function playMusic() {
+        music.play();
+        sessionStorage.setItem('isMusicPlaying', 'true');
+    }
+    // 1. Kapag nag-load ang page, i-check kung tumutugtog na ito kanina
+    if (sessionStorage.getItem('isMusicPlaying') === 'true') {
+        music.play();
+    }
+    // 2. Kapag ginallaw ang mouse sa screen, patugtugin ang music
+    window.addEventListener('mouseover', function() {
+        playMusic();
+    }, { once: true });
+</script>
+<script>
+    // para maging smooth ang ang mga elements pag nag iiscrooll
+    ScrollReveal({ reset: true,
+                 delay: 300,
+                 distance: '60px'
+    });
+    ScrollReveal().reveal('.section-title');
+    ScrollReveal().reveal('.section-desc', {
+     delay: 700
+    });
+    ScrollReveal().reveal('.section-desc1', {
+     delay: 700
+    });
+    
+    //title
+     ScrollReveal().reveal('.section-home_title',{
+        origin: 'right'
+     });
+     //logo
+    ScrollReveal().reveal('.section-home_image',{
+        origin: 'right'
+    });
+    //contact and explore botton
+        ScrollReveal().reveal('.home-botton', {
+        delay: 600
+    });
+    //section menu section-menu_card
+    ScrollReveal().reveal('.section-menu_card', {
+        interval: 300
+    });
+    ScrollReveal().reveal('.section-menu_card1', {
+        interval: 300
+    });
+    //section about 
+    ScrollReveal().reveal('.section-stats', {
+        delay: 1100,
+        interval: 260
+    });
+    ScrollReveal().reveal('.primary-btn', {
+        delay: 900,
+    });
+
+    ScrollReveal().reveal('.section-about_img', {
+        delay: 900,
+        origin: 'left'
+    });
+    ScrollReveal().reveal('.section-background_img', {
+        delay: 900,
+        origin: 'right'
+    });
+    ScrollReveal().reveal('.section-background_img1', {
+        delay: 900,
+        origin: 'right'
+    });
+    //service
+    ScrollReveal().reveal('.section-service_card', {
+        delay: 900,
+        
+    }); 
+    //contact section_contact-title section_contact-items3 section-about_form
+    ScrollReveal().reveal('.section_contact-title', {
+        delay: 600,
+    });
+ ScrollReveal().reveal('.section_contact-desc', {
+        delay: 900,
+    });
+    ScrollReveal().reveal('.section_contact-items3', {
+        delay: 1100,
+    });
+    ScrollReveal().reveal('.section-about_form', {
+        delay: 1400,
+        interval: 300
+    });
+    
+</script>
+</html>
